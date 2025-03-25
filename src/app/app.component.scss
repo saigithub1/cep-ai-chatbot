@@ -1,0 +1,50 @@
+.chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    overflow: hidden;
+    z-index: 1000;
+    transition: max-height 0.3s ease;
+  }
+
+  .chat-header-container {
+    display: flex;
+    align-items: center;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chat-container.minimized {
+    max-height: 50px; /* Reduce height when minimized */
+    overflow: hidden;
+  }
+  
+  .minimize-button {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    color: #401A76;
+  }
+
+  .total-page {
+    background-image: url('../assets/cepmarketiq.png'); /* Path to your background image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make the background cover the full viewport height */
+    width: 100vw; /* Make the background cover the full viewport width */
+  }

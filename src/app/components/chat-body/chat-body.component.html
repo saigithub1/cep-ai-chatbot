@@ -1,0 +1,9 @@
+<div class="chat-body">
+  <div *ngFor="let message of messages" class="message" [ngClass]="{'user-message': message.sender === 'user', 'bot-message': message.sender === 'bot'}">
+    <div class="message-content">
+      <span class="sender">{{ message.sender }}</span>
+      <p class="content">{{ message.content }}</p>
+      <span class="timestamp">{{ message.timestamp | date:'shortTime' }}</span>
+    </div>
+  </div>
+</div>

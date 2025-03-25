@@ -1,0 +1,16 @@
+.chat-header {
+  background: linear-gradient(90deg, #4caf50, #388e3c); /* Gradient background */
+  color: white; /* White text */
+  text-align: center; /* Centered text */
+  font-size: 28px; /* Larger font size for a bold header */
+  font-weight: bold; /* Bold text */
+  border-top-left-radius: 10px; /* Rounded corners */
+  border-top-right-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.chat-header h6 {
+  margin: 0; /* Remove default margin */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  letter-spacing: 1px; /* Slight spacing between letters */
+}
