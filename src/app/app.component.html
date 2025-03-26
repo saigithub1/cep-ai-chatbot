@@ -1,4 +1,15 @@
 <div class="total-page">
+  <h2>AI Generated Data</h2>
+  <div class="display-json">
+    <div *ngFor="let item of items" class="item-card">
+      <div class="item-content">
+        <span *ngFor="let key of getKeys(item)" class="item-property">
+          <strong>{{ key }}:</strong> {{ item[key] }}
+        </span>
+      </div>
+    </div>
+    <div #scrollAnchor></div> <!-- Sentinel element for infinite scroll -->
+  </div>
   <div class="chat-container" [class.minimized]="isMinimized">
     <div class="chat-header-container">
       <button class="minimize-button" (click)="toggleMinimize()">

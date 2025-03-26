@@ -40,11 +40,46 @@
     color: #401A76;
   }
 
-  .total-page {
-    background-image: url('../assets/cepmarketiq.png'); /* Path to your background image */
-    background-size: cover; /* Ensure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    height: 100vh; /* Make the background cover the full viewport height */
-    width: 100vw; /* Make the background cover the full viewport width */
+  // .total-page {
+  //   background-image: url('../assets/cepmarketiq.png'); /* Path to your background image */
+  //   background-size: cover; /* Ensure the image covers the entire background */
+  //   background-position: center; /* Center the image */
+  //   background-repeat: no-repeat; /* Prevent the image from repeating */
+  //   height: 100vh; /* Make the background cover the full viewport height */
+  //   width: 100vw; /* Make the background cover the full viewport width */
+  // }
+
+  .display-json {
+    width: 70%; /* Take up 70% of the screen width */
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+    gap: 10px; /* Add space between the cards */
+  }
+  
+  .item-card {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e0f7fa;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .item-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .item-description {
+    margin-bottom: 5px;
   }

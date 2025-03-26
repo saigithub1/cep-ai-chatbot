@@ -12,7 +12,7 @@ export class ChatbotService {
 
   constructor(private http: HttpClient) { }
 
-  sendMessage1(message: string): Observable<string> {
+  sendMessage1(message: string): Observable<any> {
     return this.http.post<string>(this.apiUrl, {
       "query": "Show me properties near Main St"});
   }
