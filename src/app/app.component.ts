@@ -38,7 +38,7 @@ export class AppComponent {
         (response) => {
           console.log('Response from backend:', response);
           this.items = response;
-          const botMessage: Message = { sender: 'bot', content: response, timestamp: new Date() };
+          const botMessage: Message = { sender: 'bot', content: `${response?.length} results found`, timestamp: new Date() };
           this.messages = [...this.messages, botMessage];
         },
         (error) => {
