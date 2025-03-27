@@ -8,7 +8,7 @@ import { Message } from '../models/message.model';
 
 })
 export class ChatbotService {
-  private apiUrl = 'http://localhost:8081/search.'; // Replace with your AI backend URL
+  private apiUrl = '/api/search.'; // Replace with your AI backend URL
 
   constructor(private http: HttpClient) { }
 
