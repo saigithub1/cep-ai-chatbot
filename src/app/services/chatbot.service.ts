@@ -14,7 +14,7 @@ export class ChatbotService {
 
   sendMessage1(message: string): Observable<any> {
     return this.http.post<string>(this.apiUrl, {
-      "query": "Show me properties near Main St"});
+      "query": message});
   }
 
   getResponse(): Observable<Message> {

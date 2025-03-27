@@ -21,8 +21,7 @@ export class AppComponent {
 
 
   constructor(private chatbotService: ChatbotService) {
-    this.items = this.generateItems(20);
-
+    
   }
   ngAfterViewInit() {
     this.setupIntersectionObserver();
@@ -30,6 +29,7 @@ export class AppComponent {
 
   sendMessage(message: string) {
     if (message.trim()) {
+      this.items = [];
       const userMessage: Message = { sender: 'user', content: message, timestamp: new Date() };
       const botMessage: Message = { sender: 'bot', content: 'Please wait till I fetch results ...', timestamp: new Date() };
 
@@ -84,7 +84,5 @@ export class AppComponent {
   }
 
   loadMoreItems() {
-    const newItems = this.generateItems(10);
-    this.items = [...this.items, ...newItems];
   }
 }
